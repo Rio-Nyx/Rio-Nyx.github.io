@@ -79,9 +79,11 @@ loadImages((images) => {
     queuedAnimations.push("punch");
   };
   document.getElementById("backward").onclick = () => {
+    currentX = currentX > 0 ? currentX - 50 : currentX;
     queuedAnimations.push("backward");
   };
   document.getElementById("forward").onclick = () => {
+    currentX = currentX < 1450 ? currentX + 50 : currentX;
     queuedAnimations.push("forward");
   };
   document.getElementById("block").onclick = () => {
@@ -98,7 +100,7 @@ loadImages((images) => {
       currentX = currentX < 1450 ? currentX + 50 : currentX;
       queuedAnimations.push("forward");
     } else if (key === "ArrowLeft") {
-      currentX = currentX > 50 ? currentX - 50 : currentX;
+      currentX = currentX > 0 ? currentX - 50 : currentX;
       queuedAnimations.push("backward");
     } else if (key === " ") {
       queuedAnimations.push("block");
