@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap");
+
+* {
+  background-color: #1f2937;
+  color: #ffffff;
+  margin-top: 0rem;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: auto;
+}
+h3 {
+  font-size: 2.5rem;
+}
+p {
+  font-size: 1.5rem;
+}
+
+.font-lux {
+  font-family: "Luxurious Roman", cursive;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.left {
+  text-align: left;
+}
+.p-4 {
+  padding: 4rem;
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1f2937;
+  font-size: 1.5rem;
+}
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.block {
+  display: block;
+  text-align: center;
+}
+img {
+  padding: 0rem 0.5rem;
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+} */
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: #34495e; */
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  margin: 40px;
+  position: relative;
+  max-width: 250px;
+  max-height: 350px;
+  box-shadow: 0 40px 60px -6px black;
+}
+
+.card-title {
+  display: block;
+  text-align: center;
+  color: #fff;
+  background-color: #6184a8;
+  padding: 2%;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.card img {
+  width: 100%;
+  height: 98%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+}
+
+.card-desc {
+  display: block;
+  font-size: 1.2rem;
+  position: absolute;
+  height: 0;
+  top: 0;
+  opacity: 0;
+  padding: 18px 8%;
+  background-color: white;
+  color: #111;
+  overflow-y: scroll;
+  transition: 0.8s ease;
+}
+
+.card:hover .card-desc {
+  opacity: 1;
+  height: 100%;
+}
+
+/* h1 {
+  font-size: 2.8rem;
+  color: #fff;
+  margin: 40px 0 20px 0;
+  text-align: center;
+} */
+.card-img {
+  width: 577px;
+  height: 865px;
+}
